@@ -895,7 +895,6 @@ GameObject:
   - component: {fileID: 164820590}
   - component: {fileID: 164820593}
   - component: {fileID: 164820592}
-  - component: {fileID: 164820591}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
@@ -918,29 +917,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854467949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &164820591
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164820589}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &164820592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1004,7 +980,7 @@ GameObject:
   - component: {fileID: 166347179}
   m_Layer: 0
   m_Name: PURPLEBot :D
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,7 +994,7 @@ Transform:
   m_GameObject: {fileID: 166347176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.933732, z: -0, w: -0.3579731}
-  m_LocalPosition: {x: 12.498, y: -2.551, z: 7.472}
+  m_LocalPosition: {x: 32.8, y: -2.551, z: 30.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1052,7 +1028,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1319,7 +1295,6 @@ GameObject:
   - component: {fileID: 190351431}
   - component: {fileID: 190351434}
   - component: {fileID: 190351433}
-  - component: {fileID: 190351432}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1342,29 +1317,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854467949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &190351432
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190351430}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &190351433
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1657,7 +1609,7 @@ GameObject:
   - component: {fileID: 251131070}
   m_Layer: 0
   m_Name: YELLOWBot :D
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,7 +1623,7 @@ Transform:
   m_GameObject: {fileID: 251131067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9779581, z: -0, w: -0.20880161}
-  m_LocalPosition: {x: -16.57, y: -2.551, z: -2.05}
+  m_LocalPosition: {x: -19.17, y: -2.551, z: 3.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1705,7 +1657,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3079,7 +3031,7 @@ GameObject:
   - component: {fileID: 615933524}
   m_Layer: 0
   m_Name: REDBot :D
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3093,7 +3045,7 @@ Transform:
   m_GameObject: {fileID: 615933521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9999407, z: -0, w: 0.010894435}
-  m_LocalPosition: {x: -8.049993, y: -2.551, z: -8.399875}
+  m_LocalPosition: {x: -7.97, y: -2.551, z: -4.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3127,7 +3079,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3605,6 +3557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688411548}
   - component: {fileID: 688411549}
+  - component: {fileID: 688411550}
   m_Layer: 0
   m_Name: DeployHead
   m_TagString: Untagged
@@ -3650,6 +3603,29 @@ MonoBehaviour:
   BlueBot: {fileID: 1201078993}
   PurpleBot: {fileID: 166347177}
   radius: 8
+--- !u!136 &688411550
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688411547}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0305316
+  m_Height: 3.3712916
+  m_Direction: 1
+  m_Center: {x: -8.673129e-10, y: -0.8498411, z: -0.000036716454}
 --- !u!1 &703826560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5159,7 +5135,7 @@ GameObject:
   - component: {fileID: 871725194}
   m_Layer: 0
   m_Name: Machine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6475,7 +6451,7 @@ GameObject:
   - component: {fileID: 1201078995}
   m_Layer: 0
   m_Name: BLUEBot :D
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6489,7 +6465,7 @@ Transform:
   m_GameObject: {fileID: 1201078992}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.17833473, z: -0, w: -0.9839699}
-  m_LocalPosition: {x: -14.47, y: -2.551, z: -34.67}
+  m_LocalPosition: {x: -19.6, y: -2.551, z: -48.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6523,7 +6499,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7007,7 +6983,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7441,7 +7417,6 @@ GameObject:
   - component: {fileID: 1358586009}
   - component: {fileID: 1358586012}
   - component: {fileID: 1358586011}
-  - component: {fileID: 1358586010}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -7464,29 +7439,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854467949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1358586010
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358586008}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 84.42235
-  m_Direction: 1
-  m_Center: {x: -0.0005123371, y: 16.02636, z: -0.020607248}
 --- !u!23 &1358586011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7927,7 +7879,7 @@ GameObject:
   - component: {fileID: 1451372666}
   m_Layer: 0
   m_Name: GREENBot :D
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7947,7 +7899,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7962,7 +7914,7 @@ Transform:
   m_GameObject: {fileID: 1451372663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.26405057, z: -0, w: 0.96450883}
-  m_LocalPosition: {x: 3.67, y: -2.551, z: -40.58}
+  m_LocalPosition: {x: 12.7, y: -2.551, z: -55.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9457,7 +9409,6 @@ GameObject:
   - component: {fileID: 1655563561}
   - component: {fileID: 1655563564}
   - component: {fileID: 1655563563}
-  - component: {fileID: 1655563562}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -9480,29 +9431,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854467949}
   m_LocalEulerAnglesHint: {x: 1.584, y: -2.849, z: 3.193}
---- !u!136 &1655563562
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655563560}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1655563563
 MeshRenderer:
   m_ObjectHideFlags: 0

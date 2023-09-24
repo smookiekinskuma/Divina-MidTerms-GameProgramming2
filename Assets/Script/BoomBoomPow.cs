@@ -10,8 +10,6 @@ public class BoomBoomPow : MonoBehaviour
 
     public Transform RedBot, GreenBot, YellowBot, BlueBot, PurpleBot;
 
-    float timeCount = 0.0f;
-
     public float radius;
 
     //Colors
