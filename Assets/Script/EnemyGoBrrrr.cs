@@ -21,7 +21,7 @@ public class EnemyGoBrrrr : MonoBehaviour
     void Update()
     {
         LookRotation();
-        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 10 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 5 * Time.deltaTime);
     }
 
     void LookRotation()
@@ -30,4 +30,5 @@ public class EnemyGoBrrrr : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = rotation;
     }
+
 }
