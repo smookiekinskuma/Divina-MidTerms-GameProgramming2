@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject game, lose;
+
     public Vector3 currentEulerAngles;
     public Quaternion currentRotation;
     public Transform Machine;
@@ -14,7 +16,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         LookRotation();
-        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 3 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 10 * Time.deltaTime);
     }
 
     void LookRotation()
@@ -22,5 +24,14 @@ public class Enemy : MonoBehaviour
         Vector3 relativePos = Machine.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = rotation;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            //game.SetActive(false);
+            lose.SetActive(true);
+        }
     }
 }

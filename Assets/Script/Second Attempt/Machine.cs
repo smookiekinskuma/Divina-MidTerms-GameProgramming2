@@ -25,16 +25,7 @@ public class Machine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //oRedBot.SetActive(true);
-        //bRedBot = true;
-        //oYellowBot.SetActive(false);
-        //bYellowBot = false;
-        //oGreenBot.SetActive(false);
-        //bGreenBot = false;
-        //oBlueBot.SetActive(false);
-        //bBlueBot = false;
-        //oPurpleBot.SetActive(false);
-        //bPurpleBot = false;
+        bRedBot = true;
     }
 
     // Update is called once per frame

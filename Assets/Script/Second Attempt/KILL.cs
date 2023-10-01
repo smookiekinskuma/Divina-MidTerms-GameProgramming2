@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullets : MonoBehaviour
+public class KILL : MonoBehaviour
 {
     public GameObject Bullet;
     public GameObject RedBot, GreenBot, YellowBot, BlueBot, PurpleBot;
-    public GameObject Redbullet, Greenbullet, Yellowbullet, Bluebullet, Purplebullet;
 
-    public Transform transformBullet;
-
-    public void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         RedBot.SetActive(true);
-        GreenBot.SetActive(false);
         YellowBot.SetActive(false);
+        GreenBot.SetActive(false);
         BlueBot.SetActive(false);
         PurpleBot.SetActive(false);
     }
@@ -30,8 +28,7 @@ public class Bullets : MonoBehaviour
         if (other.gameObject.tag == "Green") //&& BoomBoomPow.Instance.greenon == true)
         {
             GreenBot.SetActive(false);
-            //YellowBot.SetActive(true);
-            BlueBot.SetActive(true);
+            YellowBot.SetActive(true);
         }
 
         if (other.gameObject.tag == "Yellow") //&& BoomBoomPow.Instance.yellowon == true)
