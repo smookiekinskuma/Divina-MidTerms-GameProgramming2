@@ -17,7 +17,6 @@ public class BoomBoomPow : MonoBehaviour
 
     //Bots
     public Transform RedBot, GreenBot, YellowBot, BlueBot, PurpleBot;
-    public GameObject oRedBot, oGreenBot, oYellowBot, oBlueBot, oPurpleBot;
 
     //Bullets
     public Transform Bullet;
@@ -190,35 +189,35 @@ public class BoomBoomPow : MonoBehaviour
         float distR = Vector3.Distance(transform.position, RedBot.position);
         if (distR <= radius) 
         {
-            //Debug.Log("Red enemy nearby!");
+            Debug.Log("Red enemy nearby!");
             LookRotationRed();
         }
 
         float distB = Vector3.Distance(transform.position, BlueBot.position);
         if (distB <= radius)
         {
-            //Debug.Log("Blue enemy nearby!");
+            Debug.Log("Blue enemy nearby!");
             LookRotationBlue();
         }
 
         float distY = Vector3.Distance(transform.position, YellowBot.position);
         if (distY <= radius)
         {
-            //Debug.Log("Yellow enemy nearby!");
+            Debug.Log("Yellow enemy nearby!");
             LookRotationYellow();
         }
 
         float distG = Vector3.Distance(transform.position, GreenBot.position);
         if (distG <= radius)
         {
-            //Debug.Log("Green enemy nearby!");
+            Debug.Log("Green enemy nearby!");
             LookRotationGreen();
         }
 
         float distP = Vector3.Distance(transform.position, PurpleBot.position);
         if (distP <= radius)
         {
-            //Debug.Log("Purple enemy nearby!");
+            Debug.Log("Purple enemy nearby!");
             LookRotationPurple();
         } 
     }
@@ -269,8 +268,7 @@ public class BoomBoomPow : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Red" || other.gameObject.tag == "Yellow" || other.gameObject.tag == "Green" || other.gameObject.tag == "Blue" || other.gameObject.tag == "Purple")
-        {
-            //Debug.Log("OW");
+        { 
             //Base.SetActive(false);
             Text.SetActive(true);
         }

@@ -21,7 +21,7 @@ public class EnemyGoBrrrr : MonoBehaviour
     void Update()
     {
         LookRotation();
-        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 5 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, Machine.position, 3 * Time.deltaTime);
     }
 
     void LookRotation()

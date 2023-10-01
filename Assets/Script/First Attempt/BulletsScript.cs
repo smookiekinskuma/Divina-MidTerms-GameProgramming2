@@ -8,6 +8,8 @@ public class Bullets : MonoBehaviour
     public GameObject RedBot, GreenBot, YellowBot, BlueBot, PurpleBot;
     public GameObject Redbullet, Greenbullet, Yellowbullet, Bluebullet, Purplebullet;
 
+    public Transform transformBullet;
+
     public void Start()
     {
         RedBot.SetActive(true);
@@ -28,14 +30,15 @@ public class Bullets : MonoBehaviour
         if (other.gameObject.tag == "Green") //&& BoomBoomPow.Instance.greenon == true)
         {
             GreenBot.SetActive(false);
-            YellowBot.SetActive(true);
-        }
-
-        if (other.gameObject.tag == "Yellow") //&& BoomBoomPow.Instance.yellowon == true)
-        {
-            YellowBot.SetActive(false);
+            //YellowBot.SetActive(true);
             BlueBot.SetActive(true);
         }
+
+        //if (other.gameObject.tag == "Yellow") //&& BoomBoomPow.Instance.yellowon == true)
+        //{
+        //    YellowBot.SetActive(false);
+        //    BlueBot.SetActive(true);
+        //}
 
         if (other.gameObject.tag == "Blue") //&& BoomBoomPow.Instance.blueon == true)
         {
