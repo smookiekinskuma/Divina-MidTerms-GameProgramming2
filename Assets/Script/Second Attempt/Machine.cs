@@ -88,12 +88,12 @@ public class Machine : MonoBehaviour
     void RedColor()
     {
         //Bullet
-        bulletCurrent.SetActive(false);
-        bulletRed.SetActive(true);
-        bulletYellow.SetActive(false);
-        bulletGreen.SetActive(false);
-        bulletBlue.SetActive(false);
-        bulletPurple.SetActive(false);
+        //bulletCurrent.SetActive(false);
+        //bulletRed.SetActive(true);
+        //bulletYellow.SetActive(false);
+        //bulletGreen.SetActive(false);
+        //bulletBlue.SetActive(false);
+        //bulletPurple.SetActive(false);
 
         //Head
         headCurrent.SetActive(false);
@@ -114,12 +114,12 @@ public class Machine : MonoBehaviour
     void YellowColor()
     {
         //Bullet
-        bulletCurrent.SetActive(false);
-        bulletRed.SetActive(false);
-        bulletYellow.SetActive(true);
-        bulletGreen.SetActive(false);
-        bulletBlue.SetActive(false);
-        bulletPurple.SetActive(false);
+        //bulletCurrent.SetActive(false);
+        //bulletRed.SetActive(false);
+        //bulletYellow.SetActive(true);
+        //bulletGreen.SetActive(false);
+        //bulletBlue.SetActive(false);
+        //bulletPurple.SetActive(false);
 
         //Head
         headCurrent.SetActive(false);
@@ -140,12 +140,12 @@ public class Machine : MonoBehaviour
     void GreenColor()
     {
         //Bullet
-        bulletCurrent.SetActive(false);
-        bulletRed.SetActive(false);
-        bulletYellow.SetActive(false);
-        bulletGreen.SetActive(true);
-        bulletBlue.SetActive(false);
-        bulletPurple.SetActive(false);
+        //bulletCurrent.SetActive(false);
+        //bulletRed.SetActive(false);
+        //bulletYellow.SetActive(false);
+        //bulletGreen.SetActive(true);
+        //bulletBlue.SetActive(false);
+        //bulletPurple.SetActive(false);
 
         //Head
         headCurrent.SetActive(false);
@@ -166,12 +166,12 @@ public class Machine : MonoBehaviour
     void BlueColor()
     {
         //Bullet
-        bulletCurrent.SetActive(false);
-        bulletRed.SetActive(false);
-        bulletYellow.SetActive(false);
-        bulletGreen.SetActive(false);
-        bulletBlue.SetActive(true);
-        bulletPurple.SetActive(false);
+        //bulletCurrent.SetActive(false);
+        //bulletRed.SetActive(false);
+        //bulletYellow.SetActive(false);
+        //bulletGreen.SetActive(false);
+        //bulletBlue.SetActive(true);
+        //bulletPurple.SetActive(false);
 
         //Head
         headCurrent.SetActive(false);
@@ -191,12 +191,12 @@ public class Machine : MonoBehaviour
     void PurpleColor()
     {
         //Bullet
-        bulletCurrent.SetActive(false);
-        bulletRed.SetActive(false);
-        bulletYellow.SetActive(false);
-        bulletGreen.SetActive(false);
-        bulletBlue.SetActive(false);
-        bulletPurple.SetActive(true);
+        //bulletCurrent.SetActive(false);
+        //bulletRed.SetActive(false);
+        //bulletYellow.SetActive(false);
+        //bulletGreen.SetActive(false);
+        //bulletBlue.SetActive(false);
+        //bulletPurple.SetActive(true);
 
         //Head
         headCurrent.SetActive(false);
