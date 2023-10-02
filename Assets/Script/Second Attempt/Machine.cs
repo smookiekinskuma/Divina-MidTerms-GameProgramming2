@@ -10,7 +10,7 @@ public class Machine : MonoBehaviour
 
     //Machine
     public GameObject headCurrent, headRed, headYellow, headGreen, headBlue, headPurple;
-    public GameObject bulletCurrent, bulletRed, bulletYellow, bulletGreen, bulletBlue, bulletPurple;
+    //public GameObject bulletCurrent, bulletRed, bulletYellow, bulletGreen, bulletBlue, bulletPurple;
     public bool bbulletRed, bbulletYellow, bbulletGreen, bbulletBlue, bbulletPurple;
 
     //Bots

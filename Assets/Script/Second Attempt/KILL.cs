@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This is a sample script so that the bots work properly.
 public class KILL : MonoBehaviour
 {
     public GameObject Bullet;
