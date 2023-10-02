@@ -10,8 +10,6 @@ public class Enemy : MonoBehaviour
     public Quaternion currentRotation;
     public Transform Machine;
 
-    public float speed;
-
     // Update is called once per frame
     void Update()
     {
