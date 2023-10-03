@@ -10,7 +10,6 @@ public class Machine : MonoBehaviour
 
     //Machine
     public GameObject headCurrent, headRed, headYellow, headGreen, headBlue, headPurple;
-    //public GameObject bulletCurrent, bulletRed, bulletYellow, bulletGreen, bulletBlue, bulletPurple;
     public bool bbulletRed, bbulletYellow, bbulletGreen, bbulletBlue, bbulletPurple;
 
     //Bots
@@ -25,32 +24,21 @@ public class Machine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bRedBot = true;
+        oRedBot.SetActive(true); 
+        oYellowBot.SetActive(false);
+        oGreenBot.SetActive(false);
+        oBlueBot.SetActive(false);
+        oPurpleBot.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (bRedBot == true)
-        {
-            RedBot();
-        }
-        if (bYellowBot == true)
-        {
-            YellowBot();
-        }
-        if (bGreenBot == true)
-        {
-            GreenBot();
-        }
-        if (bBlueBot == true)
-        {
-            BlueBot();
-        }
-        if (bPurpleBot == true)
-        {
-            PurpleBot();
-        }
+        RedBot();
+        GreenBot();
+        YellowBot();
+        BlueBot();
+        PurpleBot();
 
         switch (RandomPicker)
         {
@@ -72,6 +60,7 @@ public class Machine : MonoBehaviour
         }
     }
 
+    //Color Changer
     private void OnMouseDown()
     {
         RandomPicker = RandomColor[Random.Range(0, RandomColor.Length)];
@@ -87,14 +76,6 @@ public class Machine : MonoBehaviour
     //Coloring
     void RedColor()
     {
-        //Bullet
-        //bulletCurrent.SetActive(false);
-        //bulletRed.SetActive(true);
-        //bulletYellow.SetActive(false);
-        //bulletGreen.SetActive(false);
-        //bulletBlue.SetActive(false);
-        //bulletPurple.SetActive(false);
-
         //Head
         headCurrent.SetActive(false);
         headRed.SetActive(true);
@@ -113,14 +94,6 @@ public class Machine : MonoBehaviour
 
     void YellowColor()
     {
-        //Bullet
-        //bulletCurrent.SetActive(false);
-        //bulletRed.SetActive(false);
-        //bulletYellow.SetActive(true);
-        //bulletGreen.SetActive(false);
-        //bulletBlue.SetActive(false);
-        //bulletPurple.SetActive(false);
-
         //Head
         headCurrent.SetActive(false);
         headRed.SetActive(false);
@@ -139,14 +112,6 @@ public class Machine : MonoBehaviour
 
     void GreenColor()
     {
-        //Bullet
-        //bulletCurrent.SetActive(false);
-        //bulletRed.SetActive(false);
-        //bulletYellow.SetActive(false);
-        //bulletGreen.SetActive(true);
-        //bulletBlue.SetActive(false);
-        //bulletPurple.SetActive(false);
-
         //Head
         headCurrent.SetActive(false);
         headRed.SetActive(false);
@@ -165,14 +130,6 @@ public class Machine : MonoBehaviour
 
     void BlueColor()
     {
-        //Bullet
-        //bulletCurrent.SetActive(false);
-        //bulletRed.SetActive(false);
-        //bulletYellow.SetActive(false);
-        //bulletGreen.SetActive(false);
-        //bulletBlue.SetActive(true);
-        //bulletPurple.SetActive(false);
-
         //Head
         headCurrent.SetActive(false);
         headRed.SetActive(false);
@@ -190,14 +147,6 @@ public class Machine : MonoBehaviour
     }
     void PurpleColor()
     {
-        //Bullet
-        //bulletCurrent.SetActive(false);
-        //bulletRed.SetActive(false);
-        //bulletYellow.SetActive(false);
-        //bulletGreen.SetActive(false);
-        //bulletBlue.SetActive(false);
-        //bulletPurple.SetActive(true);
-
         //Head
         headCurrent.SetActive(false);
         headRed.SetActive(false);

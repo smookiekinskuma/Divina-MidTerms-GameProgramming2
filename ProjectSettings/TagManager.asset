@@ -11,6 +11,11 @@ TagManager:
   - Green
   - Blue
   - Purple
+  - BlueBullet
+  - PurpleBullet
+  - RedBullet
+  - YellowBullet
+  - GreenBullet
   layers:
   - Default
   - TransparentFX

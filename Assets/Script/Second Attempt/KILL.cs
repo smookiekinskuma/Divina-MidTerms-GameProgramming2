@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//This is a sample script so that the bots work properly.
 public class KILL : MonoBehaviour
 {
-    public GameObject Bullet;
+    //This is a sample script so that the bots work properly.
+    public Machine Machine;
+    public GameObject game, win;
     public GameObject RedBot, GreenBot, YellowBot, BlueBot, PurpleBot;
 
     // Start is called before the first frame update
@@ -20,33 +21,35 @@ public class KILL : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Red") //&& BoomBoomPow.Instance.redon == true)
+        if (other.gameObject.tag == "Red" && Machine.bbulletRed == true)
         {
             RedBot.SetActive(false);
             GreenBot.SetActive(true);
-        }
+        } //else ();
 
-        if (other.gameObject.tag == "Green") //&& BoomBoomPow.Instance.greenon == true)
+        if (other.gameObject.tag == "Green" && Machine.bbulletGreen == true)
         {
             GreenBot.SetActive(false);
             YellowBot.SetActive(true);
         }
 
-        if (other.gameObject.tag == "Yellow") //&& BoomBoomPow.Instance.yellowon == true)
+        if (other.gameObject.tag == "Yellow" && Machine.bbulletYellow == true)
         {
             YellowBot.SetActive(false);
             BlueBot.SetActive(true);
         }
 
-        if (other.gameObject.tag == "Blue") //&& BoomBoomPow.Instance.blueon == true)
+        if (other.gameObject.tag == "Blue" && Machine.bbulletBlue == true)
         {
             BlueBot.SetActive(false);
             PurpleBot.SetActive(true);
         }
 
-        if (other.gameObject.tag == "Purple") //&& BoomBoomPow.Instance.purpleon == true)
+        if (other.gameObject.tag == "Purple" && Machine.bbulletPurple == true)
         {
             PurpleBot.SetActive(false);
+            game.SetActive(false);
+            win.SetActive(true);
         }
     }
 }

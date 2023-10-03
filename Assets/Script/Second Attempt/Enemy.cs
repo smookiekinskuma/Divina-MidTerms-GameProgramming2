@@ -1,14 +1,18 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    //All bots in general
+    public Machine machine;
     public GameObject game, lose;
 
     public Vector3 currentEulerAngles;
     public Quaternion currentRotation;
     public Transform Machine;
+    public bool isRed, isYellow, isGreen, isBlue, isPurple;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +32,8 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //game.SetActive(false);
+            game.SetActive(false);
+            gameObject.SetActive(false);
             lose.SetActive(true);
         }
     }
